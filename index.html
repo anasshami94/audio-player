@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio Player</title>
+    <link href="styles/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section>
+      <header>
+        <img loading="lazy" alt="img" id="img" />
+      </header>
+      <article>
+        <h2 id="title"></h2>
+        <p id="subtitle">
+        </p>
+      </article>
+      <audio id="audio">
+    <source id="mp3Source" type="audio/mp3"></source>
+        Your browser does not support the audio format.
+    </audio>
+    <div class="player">
+        <div class="times">
+            <div id="start">
+                00:00
+            </div>
+            <div id="end">
+                00:00
+            </div>
+        </div>
+        <div class="timeline">
+            <meter min="0" max="100" value="0" id="timeline"></meter>
+        </div>
+        <div class="controls">
+            <button id="reverse" onclick="prev()">
+                <img src="public/Stop_and_play_fill-1.svg" alt="revers">
+            </button>
+            <button id="play" onclick="toggle()">
+                <img src="public/Play_fill.svg" alt="play">
+            </button>
+            
+            <button id="next" onclick="next()">
+                <img src="public/Stop_and_play_fill.svg" alt="fill">
+            </button>
+        </div>
+    </div>
+    
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

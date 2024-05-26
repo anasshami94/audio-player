@@ -1,0 +1,14 @@
+{
+  "name": "player",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "devDependencies": {
+    "live-server": "latest"
+  },
+  "author": "Anas Shami",
+  "license": "ISC"
+}

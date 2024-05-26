@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&display=swap');
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add some styles for body*/
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  background-image: url('../public/bg.jpg');
+}
+
+section {
+  border-radius: 15px;
+  background: #212936;
+  margin-top: 100px;
+  height: fit-content;
+  margin-top: 100px;
+}
+
+header {
+  width: 100%;
+  padding: 20px 20px 13px 20px;
+}
+
+img {
+  width: 305px;
+  height: 285px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+article {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+h2#title {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+#subtitle {
+  color: #4d5562;
+  font-size: 12px;
+  text-align: center;
+}
+
+.player {
+  padding: 20px;
+}
+
+.timeline {
+  width: 100%;
+  display: flex;
+  padding-top: 2px;
+}
+
+.times {
+  display: flex;
+  justify-content: space-between;
+}
+
+.times > div {
+  font-size: 10px;
+  color: #4d5562;
+}
+
+meter {
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: none;
+  border: none;
+}
+
+meter::-webkit-meter-bar {
+  background: none; /* Required to get rid of the default background property */
+  background-color: white;
+  border: none;
+}
+
+meter::-webkit-meter-optimum-value {
+  box-shadow: -5px -5px 5px 5px #c93b76;
+  background-color: #c93b76;
+  background-size: 100% 100%;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 35px 0 8px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+button > img {
+  width: 100%;
+  height: auto;
+}
+
+button#play {
+  border-radius: 50%;
+  background-color: #c93b76;
+}
